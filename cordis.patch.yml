@@ -1,0 +1,4 @@
+# Bundle patch: one layer that mounts the Session artifact ledger.
+- insert:
+    - id: session-artifacts
+      name: 'dsh-session-artifacts'

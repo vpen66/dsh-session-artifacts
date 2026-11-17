@@ -1,0 +1,7 @@
+# Development overlay for a source checkout:
+#   pnpm dsh web --patch /Users/vpen/github-projects/dsh-session-artifacts/dev.patch.yml
+# Absolute paths are required: an overlay contributes configuration but does not
+# change the directory the loader resolves module paths from.
+- insert:
+    - id: session-artifacts
+      name: '/Users/vpen/github-projects/dsh-session-artifacts/src/index.ts'

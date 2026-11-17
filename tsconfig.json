@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es2024",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "lib": ["es2024"],
+    "types": ["node"],
+    "typeRoots": ["../deepseek-harness/node_modules/@types"],
+    "strict": true,
+    "noImplicitAny": true,
+    "exactOptionalPropertyTypes": true,
+    "noUncheckedIndexedAccess": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@deepseek-ai/cordis": ["../deepseek-harness/vendor/cordis/lib/types/index.d.ts"],
+      "@deepseek-ai/schemastery": ["../deepseek-harness/vendor/schemastery/lib/types/index.d.ts"],
+      "@deepseek-ai/dsh-session": ["../deepseek-harness/packages/core/session/lib/types/index.d.ts"],
+      "@deepseek-ai/dsh-session/types": ["../deepseek-harness/packages/core/session/lib/types/types.d.ts"],
+      "@deepseek-ai/dsh-tools": ["../deepseek-harness/packages/core/tools/lib/types/index.d.ts"],
+      "@deepseek-ai/dsh-tool-present": ["../deepseek-harness/packages/deliverables/tool-present/lib/types/index.d.ts"],
+      "@deepseek-ai/dsh-tool-present/types": ["../deepseek-harness/packages/deliverables/tool-present/lib/types/types.d.ts"],
+      "@deepseek-ai/dsh-agent": ["../deepseek-harness/packages/core/agent/lib/types/index.d.ts"]
+    }
+  },
+  "include": ["src"]
+}

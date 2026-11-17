@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output (`npm run build` / install-desktop.sh write lib/ from src/)
+lib/
+dist/
+*.tsbuildinfo
+
+# client/client.js is hand-written and shipped as-is; it is not build output.
+
+# Local verification scratch: captured pages, screenshots, session JSONL, cookies
+.verify/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Test coverage
+coverage/
+
+# Editors and OS
+.idea/
+.vscode/
+.DS_Store
+._*
+Thumbs.db
